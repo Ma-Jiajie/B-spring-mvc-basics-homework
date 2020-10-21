@@ -1,6 +1,6 @@
 package com.thoughtworks.capacity.gtb.mvc.controller;
 
-import com.thoughtworks.capacity.gtb.mvc.controller.responseDTO.UserLoginDTO;
+import com.thoughtworks.capacity.gtb.mvc.controller.responsedto.UserLoginDTO;
 import com.thoughtworks.capacity.gtb.mvc.model.User;
 import com.thoughtworks.capacity.gtb.mvc.service.UserService;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
 package com.thoughtworks.capacity.gtb.mvc.service;
 
-import com.thoughtworks.capacity.gtb.mvc.dateProvider.UserDatabase;
+import com.thoughtworks.capacity.gtb.mvc.dateprovider.UserDatabase;
 import com.thoughtworks.capacity.gtb.mvc.model.User;
 import org.springframework.stereotype.Service;
 

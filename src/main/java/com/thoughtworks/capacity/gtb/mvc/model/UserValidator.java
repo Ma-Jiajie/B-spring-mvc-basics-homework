@@ -1,6 +1,6 @@
 package com.thoughtworks.capacity.gtb.mvc.model;
 
-import com.thoughtworks.capacity.gtb.mvc.dateProvider.UserDatabase;
+import com.thoughtworks.capacity.gtb.mvc.dateprovider.UserDatabase;
 
 import javax.validation.Constraint;
 import javax.validation.ConstraintValidator;
@@ -23,10 +23,8 @@ public class UserValidator implements ConstraintValidator<NotSameUserName, Strin
     public void initialize(NotSameUserName constraintAnnotation) {}
     @Override
     public boolean isValid(String username, ConstraintValidatorContext context) {
-        for(User user: UserDatabase.usersDataProvider().values()) {
-            if(username.equals(user.getUsername())) return false;
-        }
-        return true;
+        return UserDatabase.usersDataProvider().values().stream()
+                .anyMatch(user -> user.getUsername().equals(username));
     }
 }
 

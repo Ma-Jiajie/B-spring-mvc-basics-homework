@@ -1,9 +1,6 @@
-package com.thoughtworks.capacity.gtb.mvc.dateProvider;
+package com.thoughtworks.capacity.gtb.mvc.dateprovider;
 
 import com.thoughtworks.capacity.gtb.mvc.model.User;
-import com.thoughtworks.capacity.gtb.mvc.service.UserNotFoundException;
-
-import java.util.Map.Entry;
 
 import java.util.*;
 

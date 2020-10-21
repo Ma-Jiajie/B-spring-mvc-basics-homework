@@ -1,4 +1,4 @@
-package com.thoughtworks.capacity.gtb.mvc.controller.responseDTO;
+package com.thoughtworks.capacity.gtb.mvc.controller.responsedto;
 
 import com.thoughtworks.capacity.gtb.mvc.model.User;
 
